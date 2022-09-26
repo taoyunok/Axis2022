@@ -1,0 +1,30 @@
+(*constant define*)
+VAR CONSTANT
+	MAX_AXIS : USINT := 2;
+	MAX_AXIS_MINUS : USINT := MAX_AXIS-1;
+	MAX_VAXIS : USINT := 2;
+	MAX_VAXIS_MINUS : USINT := MAX_VAXIS-1;
+	MAX_CAM_NUM : USINT := 4;
+	MAX_CAM_NUM_MINUS : USINT := MAX_CAM_NUM-1;
+	MAX_PARA_NUM : USINT := 4;
+	MAX_PARA_NUM_MINUS : USINT := MAX_PARA_NUM-1;
+	MAX_OBJ_LEN : USINT := 16;
+END_VAR
+(*real    axis*)
+VAR
+	AxisFun : axis_typ;
+	AxisStep : ARRAY[0..MAX_AXIS_MINUS] OF axis_step;
+	Axis1Obj : ARRAY[0..MAX_AXIS_MINUS] OF UDINT;
+	AutData : ARRAY[0..MAX_AXIS_MINUS] OF MC_AUTDATA_TYP; (*configuration of the automat*)
+END_VAR
+VAR RETAIN
+	MC_ENDLESS_POS_DATA : ARRAY[0..MAX_AXIS_MINUS] OF MC_ENDLESS_POSITION;
+	RestoreInitOk : ARRAY[0..MAX_AXIS_MINUS] OF BOOL;
+END_VAR
+(*virtual axis*)
+VAR
+	VAxisFun : axis_typ;
+	VAxisStep : ARRAY[0..MAX_VAXIS_MINUS] OF axis_step;
+	VAxis1Obj : ARRAY[0..MAX_VAXIS_MINUS] OF UDINT;
+	VAutData : ARRAY[0..MAX_VAXIS_MINUS] OF MC_AUTDATA_TYP; (*configuration of the automat*)
+END_VAR

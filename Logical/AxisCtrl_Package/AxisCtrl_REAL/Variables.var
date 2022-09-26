@@ -1,0 +1,40 @@
+VAR
+	CNT : ARRAY[0..MAX_AXIS_MINUS] OF UINT;
+	ErrorID : ARRAY[0..MAX_AXIS_MINUS] OF UDINT;
+	MC_Power_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_Power; (*Function Block*)
+	MC_Home_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_Home; (*Function Block*)
+	MC_Stop_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_Stop; (*Function Block*)
+	MC_MoveVelocity_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_MoveVelocity; (*Function Block*)
+	MC_MoveAbsolute_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_MoveAbsolute; (*Function Block*)
+	MC_MoveAdditive_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_MoveAdditive; (*Function Block*)
+	MC_ReadAxisError_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_ReadAxisError; (*Function Block*)
+	MC_Reset_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_Reset; (*Function Block*)
+	MC_ReadStatus_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_ReadStatus; (*Function Block*)
+	MC_ReadActualPosition_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_ReadActualPosition; (*Function Block*)
+	MC_ReadActualVelocity_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_ReadActualVelocity; (*Function Block*)
+	MC_BR_ReadDriveStatus_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_ReadDriveStatus; (*Function Block*)
+	MC_Halt_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_Halt; (*Function Block*)
+	MC_BR_InitAutData_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_InitAutData;
+	MC_BR_AutControl_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_AutControl;
+	MC_BR_InitEndlessPosition_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_InitEndlessPosition;
+	MC_CamTableSelect_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_CamTableSelect;
+	MC_CamIn_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_CamIn;
+	MC_CamOut_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_CamOut;
+	MC_BR_DownloadCamProfileObj_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_DownloadCamProfileObj;
+	MC_BR_InitParTabObj_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_InitParTabObj;
+	MC_BR_InitAxisPar_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_InitAxisPar;
+	MC_SetOverride_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_SetOverride; (*MC_SetOverride_0*)
+	MC_BR_AutoCamDwell_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_AutoCamDwell;
+	Index : UINT;
+	pAxis : REFERENCE TO ACP10AXIS_typ;
+	CamNr : ARRAY[0..MAX_AXIS_MINUS] OF USINT;
+	ParNr : ARRAY[0..MAX_AXIS_MINUS] OF USINT;
+	CamTableID : ARRAY[0..MAX_AXIS_MINUS] OF USINT;
+	MC_WriteParameter_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_WriteParameter;
+	MC_ReadParameter_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_ReadParameter;
+	MC_BR_WriteParID_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_WriteParID;
+	MC_BR_ReadParID_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_ReadParID;
+	MC_BR_GetParIDInfo_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_GetParIDInfo;
+	DataType : ARRAY[0..MAX_AXIS_MINUS] OF UINT;
+	MC_BR_Offset_0 : ARRAY[0..MAX_AXIS_MINUS] OF MC_BR_Offset;
+END_VAR
